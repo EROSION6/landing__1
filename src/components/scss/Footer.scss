@@ -1,0 +1,30 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	width: 100%;
+	height: 25rem;
+	background: radial-gradient(
+		50% 457.59480797364427% at 50.000001253146294% 50.00001022804091%,
+		#171717 0%,
+		rgba(23, 23, 23, 0) 100%
+	);
+	box-shadow: inset 0 0 4px #ffffff29;
+	justify-content: center;
+	margin-bottom: 100px;
+
+	.btn-container-footer {
+		display: flex;
+		gap: 15px;
+	}
+
+	@media (max-width: 650px) {
+		.btn-container-footer {
+			flex-direction: column;
+			align-items: unset;
+			width: 100%;
+			padding: 0 30px;
+		}
+	}
+}

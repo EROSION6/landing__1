@@ -1,0 +1,96 @@
+.cardFirma {
+	width: 330px;
+	height: 6rem;
+	background-color: rgb(17, 17, 17);
+	border-radius: 16px;
+	box-shadow: rgba(255, 255, 255, 0.16) 0px 0px 4px 0px inset,
+		rgba(255, 255, 255, 0) 0px 0px 8px 0px;
+	opacity: 1;
+	backdrop-filter: blur(2px);
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	transition: box-shadow 0.4s ease;
+	span {
+		margin-right: 20px;
+
+		img {
+			border-radius: 16px;
+			box-shadow: 0 0 5px 1px rgb(171 171 171 / 37%);
+		}
+	}
+	.text_content_firma {
+		a {
+			font-size: 24px;
+			color: #fff;
+			text-decoration: none;
+		}
+
+		p {
+			color: #9f9f9f;
+			font-size: 16px;
+			display: none;
+
+			svg {
+				width: 25px;
+				height: 25px;
+				transition: all 0.3s;
+			}
+		}
+		&:hover {
+			p {
+				display: flex;
+				align-items: center;
+				svg {
+					transform: translateX(5px);
+				}
+			}
+		}
+	}
+	&:hover {
+		box-shadow: 0 0 16px 2px rgb(202 195 195 / 37%);
+		transition: box-shadow 0.8s ease-out;
+		.text_content_firma {
+			color: #fff;
+		}
+	}
+
+	@media (max-width: 1280px) {
+		&:nth-child(9),
+		&:nth-child(12) {
+			display: none;
+		}
+	}
+
+	@media (max-width: 768px) {
+		width: 250px;
+		height: 5.5rem;
+
+		.text_content_firma {
+			a {
+				font-size: 2.4vw;
+			}
+		}
+	}
+	@media (max-width: 650px) {
+		width: 90vw;
+		height: 5.5rem;
+
+		&:nth-child(5),
+		&:nth-child(6),
+		&:nth-child(7),
+		&:nth-child(8),
+		&:nth-child(9),
+		&:nth-child(10),
+		&:nth-child(11),
+		&:nth-child(12) {
+			display: none;
+		}
+
+		.text_content_firma {
+			a {
+				font-size: 2.4vw;
+			}
+		}
+	}
+}

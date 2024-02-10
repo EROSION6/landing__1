@@ -1,0 +1,78 @@
+.leftTextBlock,
+.rightTextBlock {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	align-items: flex-start;
+	gap: 20px;
+	b {
+		background: #19f763;
+		background: linear-gradient(to right, #19f763 1%, #30ff91 50%, #00ff00 50%, #216929 100%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 21px;
+	}
+	strong {
+		color: #fff;
+		font-weight: 600;
+		letter-spacing: 2px;
+		font-size: 40px;
+	}
+	p {
+		font-size: 18px;
+		color: #9f9f9f;
+		width: 60vh;
+	}
+	@media (max-width: 650px) {
+		margin-bottom: 0px;
+		strong {
+			font-size: 4vw;
+		}
+		p {
+			font-size: 3.5vw;
+			width: 45vh;
+		}
+	}
+
+	@media (max-width: 425px) {
+		text-align: center;
+		align-items: center;
+		gap: 12px;
+		strong {
+			font-size: 6vw;
+			width: 100vw;
+		}
+		p {
+			width: 100%;
+			font-size: 3vw;
+		}
+	}
+}
+
+.leftTextBlock {
+	text-align: left;
+	align-items: flex-start;
+
+	@media (max-width: 1280px) {
+		strong {
+			font-size: 2.3vw;
+		}
+		p {
+			font-size: 1.2vw;
+			width: 34vw;
+		}
+	}
+
+	@media (max-width: 1024px) {
+		text-align: center;
+		align-items: center;
+		gap: 12px;
+		strong {
+			font-size: 5vw;
+		}
+		p {
+			width: 90vw;
+			font-size: 3vw;
+		}
+	}
+}

@@ -1,0 +1,149 @@
+article {
+	width: 375px;
+	height: 440px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	border-radius: 12px;
+	background-color: #111111;
+	box-shadow: inset 0 0 8px #ffffff14;
+	overflow: hidden;
+	padding: 24px;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	&:nth-child(2) {
+		margin-top: 50px;
+	}
+
+	.img_res {
+		width: 100%;
+		height: 170px;
+		margin-top: 80px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	figure {
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		background-color: #ffffff0a;
+		box-shadow: inset 0 0 8px #ffffff14;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		svg {
+			width: 35px;
+			height: 35px;
+			color: #9f9f9f;
+		}
+	}
+
+	.text_content_info {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		strong {
+			color: #fff;
+			font-weight: 600;
+			letter-spacing: 2px;
+			font-size: 24px;
+		}
+		p {
+			font-size: 16px;
+			color: #9f9f9f;
+			width: 33vh;
+		}
+	}
+
+	@media (max-width: 1280px) {
+		width: 330px;
+		height: 400px;
+
+		.img_res {
+			height: 150px;
+		}
+
+		.text_content_info {
+			strong {
+				font-size: 18px;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+
+		figure {
+			width: 50px;
+			height: 50px;
+			svg {
+				width: 30px;
+				height: 30px;
+				color: #9f9f9f;
+			}
+		}
+	}
+
+	@media (max-width: 1024px) {
+		width: 30vw;
+		height: 350px;
+
+		.img_res {
+			height: 120px;
+		}
+
+		.text_content_info {
+			strong {
+				font-size: 1.6vw;
+			}
+			p {
+				font-size: 12px;
+			}
+		}
+
+		figure {
+			width: 60px;
+			height: 60px;
+			svg {
+				width: 30px;
+				height: 30px;
+				color: #9f9f9f;
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		width: 100%;
+		height: 60vw;
+		&:nth-child(2) {
+			margin-top: 0;
+		}
+		.img_res {
+			height: 150px;
+			img {
+				object-fit: cover;
+			}
+		}
+
+		.text_content_info {
+			strong {
+				font-size: 4.2vw;
+			}
+			p {
+				font-size: 3vw;
+				width: 100%;
+			}
+		}
+	}
+	@media (max-width: 425px) {
+		width: 100%;
+		height: 340px;
+	}
+}

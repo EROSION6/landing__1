@@ -1,0 +1,127 @@
+.main,
+.main__card-integrations {
+	margin-top: 100px;
+	display: flex;
+	padding: 0 30px;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	.main__content_text {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main__center-card {
+		display: flex;
+		gap: 20px;
+		margin: 100px 0;
+	}
+	@media (max-width: 768px) {
+		.main__center-card {
+			flex-direction: column;
+			padding: 0 30px;
+			width: 100%;
+		}
+	}
+	@media (max-width: 425px) {
+		.main__center-card {
+			padding: 0 0px;
+			width: 100%;
+		}
+	}
+
+	.text-center {
+		display: flex;
+		align-items: center;
+	}
+	.main__card-block-firma {
+		display: grid;
+		gap: 24px;
+		grid-auto-rows: minmax(0, 1fr);
+		grid-template-columns: repeat(3, minmax(200px, 1fr));
+		grid-template-rows: repeat(1, minmax(0, 1fr));
+		justify-content: center;
+		overflow: visible;
+		position: relative;
+		margin-top: 50px;
+		padding: 0 30px;
+	}
+
+	.main__shadow {
+		align-items: center;
+		aspect-ratio: 5.373134328358209 / 1;
+		background: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, rgb(10, 10, 10) 57.54143383286748%);
+		bottom: -120px;
+		display: flex;
+		flex: none;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		gap: 8px;
+		width: 100%;
+		height: 268px;
+		justify-content: flex-start;
+		overflow: visible;
+		padding: 40px;
+		position: absolute;
+		z-index: 1;
+	}
+
+	.main__accordion-block {
+		margin: 150px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 100%;
+		.main__left-accordion {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		.main__right-accordion {
+			margin: 30px;
+			width: 35%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	@media (max-width: 1280px) {
+		.main__card-block-firma {
+			gap: 24px;
+			grid-auto-rows: minmax(0, 1fr);
+			grid-template-columns: repeat(2, minmax(200px, 1fr));
+			grid-template-rows: repeat(1, minmax(0, 1fr));
+		}
+	}
+	@media (max-width: 1024px) {
+		.main__accordion-block {
+			display: flex;
+			flex-direction: column;
+			margin: 77px 0;
+			.main__right-accordion {
+				width: 100%;
+			}
+			.main__left-accordion {
+				align-items: unset;
+			}
+		}
+	}
+	@media (max-width: 650px) {
+		padding: 0 15px;
+		.main__card-block-firma {
+			gap: 24px;
+			grid-auto-rows: minmax(0, 1fr);
+			grid-template-columns: repeat(1, minmax(100%, 1fr));
+			grid-template-rows: repeat(1, minmax(0, 1fr));
+		}
+	}
+}
+
+.main__card-integrations {
+	position: relative;
+	margin: 0 0 50px 0;
+}

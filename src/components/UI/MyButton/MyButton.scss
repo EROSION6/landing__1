@@ -1,0 +1,51 @@
+.btn {
+	padding: 13px 24px;
+	color: #fff;
+	border: none;
+	border-radius: 80px;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.btn--secondary {
+	backdrop-filter: blur(8px);
+	background: radial-gradient(
+		39.9% 78.8461% at 50% 100%,
+		rgba(255, 255, 255, 0.16) 0%,
+		rgba(255, 255, 255, 0.08) 100%
+	);
+	box-shadow: rgba(255, 255, 255, 0.45) 0px 0px 4px 0px inset,
+		rgba(255, 255, 255, 0) 0px 0px 24px 0px;
+	opacity: 1;
+	transition: all 0.4s;
+
+	&:hover {
+		background: radial-gradient(
+			50% 100% at 50% 100%,
+			rgba(255, 255, 255, 0.16) 0%,
+			rgba(255, 255, 255, 0.08) 100%
+		);
+		box-shadow: rgba(255, 255, 255, 0.56) 0px 0px 4px 0px inset,
+			rgba(255, 255, 255, 0.32) 0px 0px 24px 0px;
+	}
+}
+
+.btn--primary {
+	backdrop-filter: none;
+	background: radial-gradient(
+		44.4226% 78.8461% at 50% 100%,
+		rgba(204, 255, 0, 0.88) 0%,
+		rgb(4, 120, 87) 100%
+	);
+	box-shadow: rgba(204, 255, 0, 0) 0px 0px 24px 4px,
+		rgba(255, 255, 255, 0.32) 0px 1.5px 2px 0px inset;
+	height: 100%;
+	opacity: 1;
+	transition: all 0.4s;
+
+	&:hover {
+		background: radial-gradient(57% 100% at 50% 100%, rgba(204, 255, 0) 0%, rgb(4, 120, 87) 100%);
+		box-shadow: rgba(204, 255, 0, 0.4) 0px 0px 24px 4px,
+			rgba(255, 255, 255, 0.32) 0px 1.5px 2px 0px inset;
+	}
+}

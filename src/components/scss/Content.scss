@@ -1,0 +1,142 @@
+.content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 30px;
+	width: 100%;
+	text-align: center;
+	margin-top: 150px;
+	padding: 0 30px;
+
+	.content__text {
+		text-align: center;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 35px;
+	}
+	.content__btn {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	.content__images_block {
+		position: relative;
+		margin-top: 50px;
+		display: flex;
+		justify-content: center;
+
+		.content__images {
+			width: 61.08330000000001rem;
+			height: 43em;
+			position: relative;
+			transition: all 0.4s;
+			-webkit-backdrop-filter: blur(4px);
+			align-content: start;
+			align-items: start;
+			backdrop-filter: blur(4px);
+			background-color: #ffffff14;
+			border-radius: 18px;
+			box-shadow: inset 0 0 8px #ffffff29;
+			display: flex;
+			flex: none;
+			flex-direction: column;
+			flex-wrap: nowrap;
+			gap: 8px;
+			height: min-content;
+			justify-content: flex-start;
+			left: 0;
+			overflow: visible;
+			padding: 8px;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+			.content__images_pod_block {
+				position: absolute;
+				width: 56.0833rem;
+				height: 20em;
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				inset: 16px;
+				transform: translate(50px, 50px);
+				img {
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 1024px) {
+		.content__images_block {
+			.content__images {
+				width: 100%;
+				height: 40em;
+				.content__images_pod_block {
+					height: 16.8em;
+					transition: all 0.4s;
+					width: 89%;
+					inset: 14px 30px;
+				}
+			}
+		}
+	}
+	@media (min-width: 654px) and (max-width: 979px) {
+		.content__images_block {
+			.content__images {
+				.content__images_pod_block {
+					height: 34.8em;
+					transition: all 0.4s;
+					width: 88%;
+					inset: 14px 8px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 650px) {
+		margin-top: 115px;
+		padding: 0 20px;
+		.content__images_block {
+			.content__images {
+				height: 75vw;
+				.content__images_pod_block {
+					inset: 0;
+					height: 64vw;
+					img {
+						width: 77vw;
+					}
+				}
+			}
+		}
+		.content__btn {
+			flex-direction: column;
+			button {
+				display: flex;
+				justify-content: center;
+			}
+		}
+		.content__text {
+			gap: 20px;
+		}
+	}
+	@media (max-width: 425px) {
+		.content__images_block {
+			.content__images {
+				height: 75vw;
+				.content__images_pod_block {
+					inset: 0px;
+					height: 57vw;
+					width: 83%;
+					margin: 0 -11px;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}

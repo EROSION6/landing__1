@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+
+.background {
+	background-image: url(https://framerusercontent.com/images/HvLIk6ayTx0mBx1Yrx33QcLKmk.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	filter: opacity(0.8);
+}
+
+::selection {
+	background: #0eeb0eb7;
+}
+::-moz-selection {
+	background: #0eeb0eb7;
+}

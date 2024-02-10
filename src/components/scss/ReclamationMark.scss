@@ -1,0 +1,29 @@
+.ticker {
+	position: relative;
+	overflow: hidden;
+	margin: 50px 0;
+	.ticker__wrapper {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		.ticker__item {
+			font-weight: 600;
+			white-space: nowrap;
+			flex-shrink: 0;
+			padding: 0 30px;
+			animation: ticker 2s linear infinite;
+			a {
+				color: #737373;
+				font-size: 28px;
+				text-decoration: none;
+				display: flex;
+				gap: 0 10px;
+				align-items: center;
+				img {
+					width: 40px;
+					height: 40px;
+				}
+			}
+		}
+	}
+}
