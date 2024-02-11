@@ -18,9 +18,6 @@ body {
 	filter: opacity(0.8);
 }
 
-::selection {
-	background: #0eeb0eb7;
-}
-::-moz-selection {
-	background: #0eeb0eb7;
+&:focus {
+	outline: none;
 }

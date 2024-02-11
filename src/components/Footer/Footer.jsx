@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import SectionWithTitle from './UI/SectionWithTitle/index';
-import MyButton from './UI/MyButton/index';
-import './scss/Footer.scss';
+import SectionWithTitle from '../../UI/SectionWithTitle/index';
+import MyButton from '../../UI/MyButton/index';
+import './Footer.scss';
 import { useScroll, motion } from 'framer-motion';
 
 function Footer() {

@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
-import CardContentList from './CardContentList';
-import MyButton from './UI/MyButton/index';
-import SectionWithTitle from './UI/SectionWithTitle/index';
-import { firmaContentList } from './Data/data';
+import CardContentList from '../CardContentList/CardContentList';
+import MyButton from '../../UI/MyButton/index';
+import SectionWithTitle from '../../UI/SectionWithTitle/index';
+import { firmaContentList } from '../Data/data';
 import { useScroll, motion } from 'framer-motion';
 
 function BlockSelectionCard() {

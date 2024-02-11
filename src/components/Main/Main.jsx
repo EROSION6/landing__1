@@ -1,28 +1,26 @@
-import React, { useRef } from 'react';
-import './scss/Main.scss';
-import Card from './Card';
-import CardInfo from './CardInfo';
-import { cardBlockInfo, AccordionInfo } from './Data/data';
-import SectionWithTitle from './UI/SectionWithTitle';
-import MyButton from './UI/MyButton/index';
-import TextBlockCardTwo from './UI/TextBlockCardTwo/index';
-import Accordion from './UI/Accordion/index';
-import { useScroll, motion } from 'framer-motion';
-import BlockSelectionCard from './BlockSelectionCard';
+import { motion, useScroll } from 'framer-motion'
+import React, { useRef, useState } from 'react'
+import MyButton from '../../UI/MyButton/index'
+import SectionWithTitle from '../../UI/SectionWithTitle'
+import TextBlockCardTwo from '../../UI/TextBlockCardTwo/index'
+import BlockSelectionCard from '../BlockSelectionCard/BlockSelectionCard'
+import Card from '../Card/Card'
+import CardInfo from '../CardInfo/CardInfo'
+import { AccordionInfo, cardBlockInfo } from '../Data/data'
+import './Main.scss'
 
 function Main() {
-	const centerCardRef = useRef(null);
-	const accordionBlockRef = useRef(null);
+	const centerCardRef = useRef(null)
+	const [isAccordion, setAccordion] = useState(0)
+
+	const handleAccordion = i => {
+		isAccordion === i ? setAccordion(null) : setAccordion(i)
+	}
 
 	const { scrollYProgress: centerCardProgress } = useScroll({
 		target: centerCardRef,
 		offset: ['1 3', '1 1'],
-	});
-
-	const { scrollYProgress: accordionBlockProgress } = useScroll({
-		target: accordionBlockRef,
-		offset: ['1 3', '1 1'],
-	});
+	})
 
 	return (
 		<main className='main'>
@@ -32,7 +30,8 @@ function Main() {
 					style={{ scale: centerCardProgress, opacity: centerCardProgress }}
 					transition={{
 						duration: 0.3,
-					}}>
+					}}
+				>
 					<SectionWithTitle
 						type='center'
 						title='All-in-one'
@@ -41,8 +40,8 @@ function Main() {
 					/>
 				</motion.span>
 				<div className='main__center-card'>
-					{cardBlockInfo.map(item => (
-						<Card key={item.icon} item={item} />
+					{cardBlockInfo.map((item, i) => (
+						<Card key={i} item={item} />
 					))}
 				</div>
 			</section>
@@ -51,17 +50,7 @@ function Main() {
 				<CardInfo type='rightCard' />
 			</section>
 			<BlockSelectionCard />
-			<motion.section
-				ref={accordionBlockRef}
-				style={{
-					scale: accordionBlockProgress,
-					opacity: accordionBlockProgress,
-					transition: accordionBlockProgress,
-				}}
-				transition={{
-					duration: 0.5,
-				}}
-				className='main__accordion-block'>
+			<motion.section className='main__accordion-block'>
 				<div className='main__left-accordion'>
 					<TextBlockCardTwo
 						type='leftTextBlock'
@@ -74,13 +63,27 @@ function Main() {
 					</MyButton>
 				</div>
 				<aside className='main__right-accordion'>
-					{AccordionInfo.map(acc => (
-						<Accordion info={acc} key={acc.id} />
+					{AccordionInfo.map((acc, i) => (
+						<div key={i} className='accordion__item'>
+							<button
+								className='accordion__item__btn'
+								onClick={() => handleAccordion(i)}
+							>
+								{acc.title}
+							</button>
+							<div
+								className={`accordion__item__text ${
+									isAccordion === i ? 'openTab' : ''
+								}`}
+							>
+								{acc.text}
+							</div>
+						</div>
 					))}
 				</aside>
 			</motion.section>
 		</main>
-	);
+	)
 }
 
-export default Main;
+export default Main

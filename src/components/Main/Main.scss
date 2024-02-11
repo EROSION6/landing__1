@@ -53,7 +53,11 @@
 	.main__shadow {
 		align-items: center;
 		aspect-ratio: 5.373134328358209 / 1;
-		background: linear-gradient(180deg, rgba(10, 10, 10, 0) 0%, rgb(10, 10, 10) 57.54143383286748%);
+		background: linear-gradient(
+			180deg,
+			rgba(10, 10, 10, 0) 0%,
+			rgb(10, 10, 10) 57.54143383286748%
+		);
 		bottom: -120px;
 		display: flex;
 		flex: none;
@@ -124,4 +128,41 @@
 .main__card-integrations {
 	position: relative;
 	margin: 0 0 50px 0;
+}
+
+.accordion__item {
+	width: 100%;
+	padding: 5px;
+	margin: 5px;
+	background: #000;
+
+	&__btn {
+		width: 100%;
+		padding: 20px;
+		border-radius: 12px;
+		display: flex;
+		font-size: 1rem;
+		color: #fff;
+		cursor: pointer;
+		border: 0;
+		background: transparent;
+		box-shadow: 0px 0px 3px 1px #fff;
+	}
+	&__text {
+		height: 0;
+		overflow: hidden;
+		color: #fff;
+		transition: all 0.4s ease;
+	}
+	.openTab {
+		padding: 10px;
+		height: auto;
+		transition: all 0.4s ease;
+	}
+
+	@media (max-width: 425px) {
+		&__btn {
+			padding: 15px;
+		}
+	}
 }

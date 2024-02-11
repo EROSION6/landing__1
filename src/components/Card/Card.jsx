@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import './scss/Card.scss';
+import { useRef } from 'react';
+import './Card.scss';
 import { useScroll, motion } from 'framer-motion';
 
 function Card({ item }) {

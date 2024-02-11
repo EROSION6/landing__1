@@ -1,17 +1,17 @@
-import React, { useRef } from 'react';
-import './scss/Content.scss';
-import MyButton from './UI/MyButton/index';
-import ReclamationMark from './ReclamationMark';
-import SectionWithTitle from './UI/SectionWithTitle/index';
-import { useScroll, motion } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion'
+import React, { useRef } from 'react'
+import ReclamationMark from '../ReclamationMark/ReclamationMark'
+import MyButton from '../../UI/MyButton/index'
+import SectionWithTitle from '../../UI/SectionWithTitle/index'
+import './Content.scss'
 
 export default function Content() {
-	const ref = useRef(null);
+	const ref = useRef(null)
 
 	const { scrollYProgress } = useScroll({
 		target: ref,
 		offset: ['1 3', '1 1'],
-	});
+	})
 	return (
 		<main className='content'>
 			<section className='content__text'>
@@ -34,7 +34,8 @@ export default function Content() {
 				transition={{
 					duration: 0.5,
 				}}
-				className='content__images_block'>
+				className='content__images_block'
+			>
 				<div className='content__images'>
 					<img
 						src='https://framerusercontent.com/images/Sr8MLXa3us2ODhRKpS6ThIXAwY.webp?scale-down-to=2048'
@@ -54,5 +55,5 @@ export default function Content() {
 			</motion.aside>
 			<ReclamationMark />
 		</main>
-	);
+	)
 }

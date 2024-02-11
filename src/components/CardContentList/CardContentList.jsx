@@ -1,5 +1,5 @@
-import React, { useRef } from 'react';
-import './scss/CardContentList.scss';
+import  { useRef } from 'react';
+import './CardContentList.scss';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import { useScroll, motion } from 'framer-motion';
 

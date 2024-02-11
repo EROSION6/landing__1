@@ -1,11 +1,11 @@
-import React, { useRef } from 'react';
-import MyButton from './UI/MyButton/index';
-import './scss/CardInfo.scss';
+import { useRef } from 'react';
+import MyButton from '../../UI/MyButton/index';
+import './CardInfo.scss';
 import { IoCardOutline } from 'react-icons/io5';
 import { MdOutlineQrCode2 } from 'react-icons/md';
 import { CgGlobeAlt } from 'react-icons/cg';
 import classNames from 'classnames';
-import TextBlockCardTwo from './UI/TextBlockCardTwo/index';
+import TextBlockCardTwo from '../../UI/TextBlockCardTwo/index';
 import { useScroll, motion } from 'framer-motion';
 
 function CardInfo({ type }) {

@@ -1,23 +1,23 @@
 import { FaShieldHalved } from 'react-icons/fa6'
 import { IoCardOutline } from 'react-icons/io5'
 import { RxLightningBolt } from 'react-icons/rx'
-import cardBlock_1 from '../assets/CardBlock/5MJ2KFCUhx9m3zYnxRjmhiQUt8.webp'
-import cardBlock_3 from '../assets/CardBlock/heEC6zDmKnKXHqeVgrwSS1Bg2m8 (1).webp'
-import cardBlock_2 from '../assets/CardBlock/heEC6zDmKnKXHqeVgrwSS1Bg2m8.webp'
+import cardBlock_1 from '../../assets/CardBlock/5MJ2KFCUhx9m3zYnxRjmhiQUt8.webp'
+import cardBlock_3 from '../../assets/CardBlock/heEC6zDmKnKXHqeVgrwSS1Bg2m8 (1).webp'
+import cardBlock_2 from '../../assets/CardBlock/heEC6zDmKnKXHqeVgrwSS1Bg2m8.webp'
 
 //firmaContentList
-import firmaContentList_1 from '../assets/Reclamation/1.webp'
-import firmaContentList_10 from '../assets/Reclamation/10.webp'
-import firmaContentList_11 from '../assets/Reclamation/11.webp'
-import firmaContentList_12 from '../assets/Reclamation/12.webp'
-import firmaContentList_2 from '../assets/Reclamation/2.webp'
-import firmaContentList_3 from '../assets/Reclamation/3.webp'
-import firmaContentList_4 from '../assets/Reclamation/4.webp'
-import firmaContentList_5 from '../assets/Reclamation/5.webp'
-import firmaContentList_6 from '../assets/Reclamation/6.webp'
-import firmaContentList_7 from '../assets/Reclamation/7.webp'
-import firmaContentList_8 from '../assets/Reclamation/8.webp'
-import firmaContentList_9 from '../assets/Reclamation/9.webp'
+import firmaContentList_1 from '../../assets/Reclamation/1.webp'
+import firmaContentList_10 from '../../assets/Reclamation/10.webp'
+import firmaContentList_11 from '../../assets/Reclamation/11.webp'
+import firmaContentList_12 from '../../assets/Reclamation/12.webp'
+import firmaContentList_2 from '../../assets/Reclamation/2.webp'
+import firmaContentList_3 from '../../assets/Reclamation/3.webp'
+import firmaContentList_4 from '../../assets/Reclamation/4.webp'
+import firmaContentList_5 from '../../assets/Reclamation/5.webp'
+import firmaContentList_6 from '../../assets/Reclamation/6.webp'
+import firmaContentList_7 from '../../assets/Reclamation/7.webp'
+import firmaContentList_8 from '../../assets/Reclamation/8.webp'
+import firmaContentList_9 from '../../assets/Reclamation/9.webp'
 
 //advertising
 
@@ -42,13 +42,13 @@ export const cardBlockInfo = [
 	},
 ]
 
-import advertising_1 from '../assets/icon/trello-svgrepo-com (1).svg'
-import advertising_2 from '../assets/icon/slack-svgrepo-com.svg'
-import advertising_3 from '../assets/icon/maze-svgrepo-com.svg'
-import advertising_4 from '../assets/icon/dropbox-158-svgrepo-com.svg'
-import advertising_5 from '../assets/icon/webflow-svgrepo-com.svg'
-import advertising_6 from '../assets/icon/doordash-svgrepo-com.svg'
-import advertising_7 from '../assets/icon/contentful-svgrepo-com.svg'
+import advertising_7 from '../../assets/icon/contentful-svgrepo-com.svg'
+import advertising_6 from '../../assets/icon/doordash-svgrepo-com.svg'
+import advertising_4 from '../../assets/icon/dropbox-158-svgrepo-com.svg'
+import advertising_3 from '../../assets/icon/maze-svgrepo-com.svg'
+import advertising_2 from '../../assets/icon/slack-svgrepo-com.svg'
+import advertising_1 from '../../assets/icon/trello-svgrepo-com (1).svg'
+import advertising_5 from '../../assets/icon/webflow-svgrepo-com.svg'
 
 export const advertising = [
 	{ icon: advertising_1, text: 'Trello' },

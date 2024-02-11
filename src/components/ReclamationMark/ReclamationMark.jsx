@@ -1,21 +1,22 @@
-import React, { useRef } from 'react';
-import './scss/ReclamationMark.scss';
-import Marquee from 'react-fast-marquee';
-import { advertising } from './Data/data';
-import { useScroll, motion } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion'
+import React, { useRef } from 'react'
+import Marquee from 'react-fast-marquee'
+import { advertising } from '../Data/data'
+import './ReclamationMark.scss'
 
 function ReclamationMark() {
-	const ref = useRef(null);
+	const ref = useRef(null)
 
 	const { scrollYProgress } = useScroll({
 		target: ref,
 		offset: ['1 3', '1 1'],
-	});
+	})
 	return (
 		<motion.div
 			ref={ref}
 			style={{ scale: scrollYProgress, opacity: scrollYProgress }}
-			className='ticker'>
+			className='ticker'
+		>
 			<div className='ticker__wrapper'>
 				<Marquee speed={100} gradient={false}>
 					{advertising.map((advert, i) => (
@@ -28,7 +29,7 @@ function ReclamationMark() {
 				</Marquee>
 			</div>
 		</motion.div>
-	);
+	)
 }
 
-export default ReclamationMark;
+export default ReclamationMark
